@@ -90,7 +90,8 @@ article > section:nth-child(1) {
   width: 100%;
   min-height: 500px;
   max-height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/Proyecto3/images/buffet-1.jpg");
 
   background-repeat: no-repeat;
@@ -153,7 +154,8 @@ article > section:nth-child(1) {
 /*Sección Tercera */
 
 article > section:nth-child(3) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/Proyecto3/images/food-table.jpg");
   height: 32rem;
   width: 100%;
@@ -589,35 +591,61 @@ footer {
     font-size: 0.9em;
   }
 
-
   /*Primera sección*/
 
   #seccionPrimera {
     width: 100%;
   }
 
-  #seccionPrimera h1{
+  #seccionPrimera h1 {
     text-align: center;
     font-size: 3em;
   }
 
-
   /*Sección Segunda */
 
   #seccionSegunda {
-
     display: flex;
     align-items: center;
   }
 
-  #seccionSegunda img{
+  #seccionSegunda img {
     width: 50%;
     height: 50%;
   }
 
-  #seccionSegunda div p{
+  #seccionSegunda div p {
     font-size: 0.7em;
   }
+
+
+  /*Sección Cuarta*/
+
+  #seccionCuarta{
+    gap: 1.6em;
+    padding: 2em;
+  }
+
+  #seccionCuarta div{
+    width: 50%;
+  }
+
+  #seccionCuarta div h3{
+    font-size: 0.93em;
+  }
+
+  /* Sección Quinta */
+
+  #paquetes{
+    margin-bottom: 20px;
+  }
+
+  .package-header{
+    font-size: 0.74em;
+  }
+
+  
+
 
 
 
