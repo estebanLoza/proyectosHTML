@@ -1,0 +1,624 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open San", sans-serif;
+  font-size: 1.09rem;
+}
+
+/*Modificar el modelo de cajas*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Aplicar un padding top al elemnto main pora la funcción de abajo*/
+main {
+  padding-top: 80px;
+}
+
+/*Diseño del navbar*/
+
+nav {
+  position: fixed;
+  padding: 12px 0;
+  background-color: white;
+  width: 100%;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5.5em;
+}
+
+#main-nav {
+  margin: auto;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+#main-nav li {
+  padding: 12px 0.85rem;
+  text-transform: uppercase;
+}
+
+#main-nav li a,
+#contacto {
+  text-decoration: none;
+  color: black;
+}
+
+/*hover de los botnes li a.*/
+
+#main-nav li a:hover {
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+}
+
+#contacto {
+  text-transform: uppercase;
+  border: 1px solid red;
+  padding: 8.7px 1.9rem;
+}
+
+/*hover del boton contacto*/
+#contacto:hover {
+  background-color: red;
+  color: white;
+  transition-duration: 1s;
+}
+
+/*Seccion 1 background*/
+
+article > section:nth-child(1) {
+  width: 100%;
+  min-height: 500px;
+  max-height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Proyecto3/images/buffet-1.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seccionPrimera h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgb(209, 209, 5);
+}
+
+/*Seccion Segunda*/
+
+#acercade {
+  /* border: 1px solid black; */
+  height: 200px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#acercade h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+
+.divider {
+  height: 2px;
+  width: 90px;
+  background-color: red;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#seccionSegunda {
+  display: flex;
+  padding: 2em 4em;
+  gap: 1.3rem;
+}
+
+#seccionSegunda img {
+  flex-basis: 50%;
+  width: 50%;
+}
+
+#seccionSegunda div p {
+  margin-bottom: 1.3em;
+}
+
+/*Sección Tercera */
+
+article > section:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Proyecto3/images/food-table.jpg");
+  height: 32rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seccionTercera p {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Open Sans";
+}
+
+/*Seccion Cuarta*/
+
+#servicios {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#servicios h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+#seccionCuarta {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+}
+
+#seccionCuarta div {
+  width: 450px;
+  border: 1px solid rgb(129, 121, 121);
+  box-shadow: 2px 1px 5px 5px rgba(0, 0, 0, 0.33);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#seccionCuarta h3 {
+  text-align: center;
+  margin: 20px;
+  font-family: Roboto;
+}
+
+#seccionCuarta div img {
+  width: 100%;
+}
+
+/*Seccion Quinta*/
+
+article > section:nth-child(5) {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  background-color: #fcfcfc;
+}
+
+#seccionQuinta {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+  padding: 0 43px;
+}
+
+#paquetes {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#paquetes h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#paquetes p {
+  /* border: 1px solid black; */
+  width: 100%;
+  position: absolute;
+  top: 11em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 5em;
+}
+
+.col {
+  border: 0.5px solid rgba(165, 163, 163, 0.781);
+  height: 100%;
+}
+
+.col ul {
+  list-style: none;
+}
+
+.col ul li {
+  text-align: center;
+  width: 100%;
+  border: 0.43px solid rgba(240, 238, 238, 0.699);
+  padding: 20px 30px;
+}
+
+.col ul li i {
+  color: green;
+  font-weight: bold;
+}
+
+.package-header {
+  font-size: 1.53rem;
+}
+
+.price {
+  background-color: rgba(228, 224, 224, 0.473);
+}
+
+/*Seccion Sexta*/
+
+#direccion {
+  margin-bottom: 40px;
+}
+
+#direccion h2 {
+  margin: 70px 0px 10px 0px;
+  text-align: center;
+}
+
+/* Opcional: centra el addressBox como en la imagen */
+#addressBox {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#seccionSexta {
+  padding: 0px 5em;
+}
+
+/*Diseño form*/
+#contactForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+  margin: 60px 0 12px;
+}
+
+.col-input {
+  width: 33%;
+  /*hatsa aquí queda espación sobrante en el diséño pero
+    se soluciona más rapido*/
+  padding: 0 0.5em;
+}
+
+.col-input input {
+  /*Aquí solucionamos 
+    la parte de arriba que quedá espacio
+    en blanco*/
+  width: 100%;
+  height: 45px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+}
+
+/*? Aquí OJO DATO, si quitas este estilo veras que el nombre estará abajo*/
+/*? pero al momento de poner el width se pondrá arriba, así que tambien nota eso*/
+/*? porque si no sobias eso, podrias complicarte y solo poner width al 100%*/
+#mensaje {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+label {
+  font-size: 1.12rem;
+  margin: 12px 0;
+}
+
+.col-input input:focus,
+#col-text textarea:focus {
+  border: 1px solid #3f3d3d;
+  box-shadow: 0 0 8px #3f3d3d;
+  transition: all 1s;
+}
+
+input[type="submit"] {
+  background-color: #008000;
+  color: white;
+  display: inline-block;
+  width: 215px;
+  height: 45px;
+  font-size: 1rem;
+  margin: 12px 0.5em 25px; /*alinea todo la parte izquierda con el comentario y el nombre */
+  border-radius: 8px;
+}
+
+#col-text {
+  padding: 0 0.5em;
+}
+
+footer {
+  background-color: #3f3d3d;
+  width: 100%;
+  padding: 2em;
+}
+
+#pieDePagina {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+#pieDePagina a i {
+  color: white;
+  font-size: 2em;
+}
+
+#copyright {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  color: white;
+}
+
+/**DISEÑO DE APLICACIONES MOVILES*/
+
+@media screen and (min-width: 344px) and (max-width: 430px) {
+  /*Encabezado*/
+  /* 
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    border: 10px solid blue;
+  } */
+
+  #navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+  }
+
+  #logo {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo img {
+    /* border: 1px solid green; */
+    height: 100%;
+  }
+
+  #main-nav {
+    display: none;
+  }
+
+  #contacto {
+    display: none;
+  }
+
+  /*Primera Sección*/
+  #seccionPrimera {
+    width: 100%;
+  }
+  #seccionPrimera h1 {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  /*Sección Segunda */
+
+  #acercade {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+  }
+
+  #acercade h2 {
+    font-size: 1.43em;
+  }
+
+  #acercade .divider {
+    top: 85%;
+  }
+
+  #seccionSegunda {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1em 1.87em;
+    gap: 0;
+  }
+
+  #seccionSegunda img {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  /*Sección Tercera*/
+
+  article > section:nth-child(3) {
+    height: 23rem;
+  }
+
+  #seccionTercera {
+    width: 100%;
+  }
+
+  #seccionTercera p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 1.32em;
+  }
+
+  /*---Sección Cuarta---*/
+
+  #servicios {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+  }
+
+  #servicios h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.43em;
+  }
+
+  #seccionCuarta {
+    flex-wrap: wrap;
+    padding: 10px 3.3em;
+  }
+
+  /*---Sección Quinta----*/
+
+  #paquetes {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    height: 200px;
+  }
+
+  #paquetes h2 {
+    font-size: 1.43em;
+    width: 100%;
+    text-align: center;
+  }
+
+  #paquetes .divider {
+    top: 67%;
+  }
+
+  #paquetes p {
+    width: 100%;
+    top: 12.8em;
+    text-align: center;
+    font-size: 0.73em;
+  }
+
+  #seccionQuinta {
+    flex-wrap: wrap;
+  }
+
+  /*Sección Sexta*/
+  #seccionSexta {
+    flex-wrap: wrap;
+    padding: 0 2em;
+  }
+
+  #contactForm {
+    display: block;
+    width: 100%;
+  }
+
+  .col-input {
+    width: 100%;
+  }
+
+  form #boxSubmit {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 853px) {
+  #navigation {
+    padding: 0 2em;
+  }
+
+  #navigation #logo {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100px;
+  }
+
+  #navigation img {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+    object-fit: cover;
+  }
+
+  #main-nav {
+    gap: 0.5em;
+  }
+
+  #main-nav li {
+    padding: 6px 0.35rem;
+    font-size: 0.7em;
+  }
+
+  #navigation #contacto {
+    padding: 4px 0.5rem;
+    font-size: 0.9em;
+  }
+
+
+  /*Primera sección*/
+
+  #seccionPrimera {
+    width: 100%;
+  }
+
+  #seccionPrimera h1{
+    text-align: center;
+    font-size: 3em;
+  }
+
+
+  /*Sección Segunda */
+
+  #seccionSegunda {
+
+    display: flex;
+    align-items: center;
+  }
+
+  #seccionSegunda img{
+    width: 50%;
+    height: 50%;
+  }
+
+  #seccionSegunda div p{
+    font-size: 0.7em;
+  }
+
+
+
+}

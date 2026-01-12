@@ -1,0 +1,470 @@
+/*
+* Este es el diseño de una landing page 
+*
+* */
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /*Valor heredado*/
+}
+
+/*Resetear márgenes y padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto; /*Aquí ya muestra el contendio mostrado (todo)*/
+  /* border: 1px solid black; */
+
+}
+
+
+/*Estilo del contenido */
+
+/*Estilo del header*/
+
+header {
+  background-color: red;
+
+  /*overflow: hidden; Esto hace que este encima del encabezado y se vea el color, verd
+* pero se notará el background-image, por ser la padre.*/
+}
+
+#logo {
+  float: left;
+}
+
+#infoContacto {
+  float: right;
+  margin-top: 22px;
+}
+
+#infoContacto i {
+  color: #fff;
+  margin-left: 12px;
+  font-size: 1.2rem;
+}
+
+/*Sección 1*/
+
+article > section:nth-child(1) {
+  background-image:
+    linear-gradient(
+      to left top,
+      rgba(55, 185, 30, 0.83),
+      rgba(25, 59, 240, 0.83)
+    ),
+    url(img/fondo_superior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+/*Para que se pueda quitar del encabezado*/
+
+#intro {
+  display:flex;
+  padding: 50px 0px;
+  flex-flow: row wrap;
+  height: 100%;
+  min-height: 600px;
+}
+
+#descripcion i {
+  font-size: 0.9rem;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #fff;
+  color: #008000;
+}
+
+#descripcion {
+  flex-basis: 60%;
+  padding: 0 1em 0 0;
+  flex-grow: 2;
+  color: white;
+}
+
+#formulario {
+  flex-basis: 30%;
+  background-color: white;
+  padding: 20px 1em;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-family: arial, Tahoma, sans-serif;
+  margin-bottom: 25px;
+}
+
+#descripcion p {
+  margin-bottom: 40px;
+  line-height: 1.65;
+}
+
+#formulario h2 {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+/*Diseño del formulario */
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  padding: 0 1em;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  border: none;
+  background-color: green;
+  color: white;
+  width: 100%;
+  padding: 10px 1em;
+  margin: 25px auto;
+  font-size: 1rem;
+}
+
+/*Seccion 2*/
+
+article > section:nth-child(2) {
+  padding: 60px;
+}
+
+#seccionDos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#seccionDos i {
+  /*Esto es el diseño de los icon que estan ahí.*/
+  color: #13a3db;
+  font-size: 2.5rem;
+  border: 1px solid;
+  border-radius: 50%; /*Esto es para que se haga el circulo azul*/
+  padding: 48px 0px;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 35px;
+}
+
+.col h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  
+}
+
+/*Diseño de la Seccion 3*/
+
+article > section:nth-child(3) {
+  background-color: #f6f9fd;
+  padding: 40px 0;
+}
+
+#seccionTres {
+  display: flex;
+  /* flex-flow: row wrap; */
+  flex-flow: row wrap;
+}
+
+#seccionTres div {
+  flex-basis: 60%;
+  padding-right: 1.2rem;
+}
+
+video {
+  flex-basis: 40%;
+  width: 10vw;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+#seccionTres a {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 12px 10em;
+  text-decoration: none;
+  margin: 25px 0px;
+}
+
+/*Diseño de la Seccion 4*/
+
+article > section:nth-child(4) {
+  padding: 60px 0px 0px;
+  text-align: center;
+}
+
+#seccionCuatro {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 20px 0.5em;
+  box-shadow: 20px 5px 15px #ccc9c9;
+  padding-bottom: 35px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 12px 2em;
+}
+
+.card i {
+  font-size: 1.5rem;
+  color: #107ba7;
+  margin: 0px 0.23em;
+}
+
+/*Seccion 5*/
+
+article > section:nth-child(5) {
+  background-image:
+    linear-gradient(
+      to left top,
+      rgba(16, 23, 167, 0.8),
+      rgba(16, 123, 167, 0.8)
+    ),
+    url(img/fondo_inferior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+#seccionCinco {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#seccionCinco p {
+  padding: 20px 0;
+}
+
+#seccionCinco h2 {
+  margin-bottom: 0px;
+}
+
+#seccionCinco a {
+  display: block;
+  background-color: #37b81e;
+  color: white;
+  text-decoration: none;
+  padding: 12px 2em;
+}
+
+#seccionCinco a:hover {
+  background-color: #358b24;
+  transition: all 0.5s;
+}
+
+/*Pie de página*/
+
+footer {
+  background-color: #2c2a2a;
+  padding: 20px 0;
+  height: 8vh;
+}
+
+.copyright {
+  float: right;
+  color: #c0bcbc;
+  padding-top: 8px;
+}
+
+.nav {
+  float: left;
+}
+
+#pieDePagina {
+  overflow: hidden;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 12px 0 0;
+}
+
+.nav li a {
+  color: white;
+  font-style: none;
+  padding-right: 1.5em;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/*Media queries/ Diseño responsivo */
+
+
+/*Aplicar los siguientes estilos cuando el tamaño del viewport sea igual o mmenor que 3480px  */
+@media screen and (max-width: 3480px ){
+  .container {
+    width: 91%;
+    max-width: 3840px; 
+  }
+}
+
+/*Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre en un rango de 960px - 1199px*/
+@media screen and (max-widht: 1920px){
+  .container{
+    max-width: 1920px;
+  }
+}
+
+
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  .col h3 {
+    font-size: 0.84rem;
+  }
+
+  h2 {
+    font-size: 1.43rem;
+  }
+
+  h1 {
+    font-size: 3.3rem;
+  }
+}
+
+/*Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre sea igual o menor que 959px*/
+@media screen and (max-width: 959px) {
+  #intro {
+    flex-flow: column wrap;
+  }
+
+  h1 {
+    font-size: 3.3rem;
+  }
+
+  #descripcion {
+    flex-basis: 100%;
+    padding: 0 0 0 0;
+    flex-grow: 0;
+  }
+
+  #seccionDos {
+    flex-flow: column wrap;
+  }
+
+  .col {
+    padding: 30px 0px;
+  }
+
+  article > section:nth-child(2) {
+    padding: 20px 0;
+  }
+
+  #seccionTres {
+    flex-flow: column wrap;
+  }
+
+  #seccionTres div {
+    flex-basis: 100%;
+    padding-right: 0;
+  }
+
+  #seccionTres a {
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  video {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  /*Seccion de los empleados*/
+
+  article > section:nth-child(4) {
+    padding: 30px 0 0;
+  }
+
+  #seccionCuatro {
+    flex-flow: column;
+  }
+
+  #seccionCinco {
+    text-align: center;
+  }
+}
+
+/*para dispositivos igual o menor de 659px*/
+@media screen and (max-width: 659px) {
+  #logo,
+  #infoContacto {
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+  }
+
+  #pieDePagina {
+    text-align: center;
+    height: 20vh;
+  }
+
+  .nav {
+    float: name;
+  }
+
+  .nav li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .copyright {
+    float: none;
+    border-top: 1px solid #3e3e3e;
+    margin-top: 30px;
+  }
+}
