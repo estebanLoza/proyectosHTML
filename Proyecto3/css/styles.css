@@ -558,7 +558,12 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 853px) {
+/*iPad Mini, */
+@media screen and (min-width: 768px) and (max-width: 964px) {
+  main {
+    padding-top: 0px;
+  }
+
   #navigation {
     padding: 0 2em;
   }
@@ -618,35 +623,76 @@ footer {
     font-size: 0.7em;
   }
 
+  /*Seccion cuarta*/
 
-  /*Sección Cuarta*/
+  #seccionCuarta {
+    width: 100%;
+  }
 
+  #seccionCuarta div {
+    width: 210px;
+  }
+
+  #seccionCuarta div h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 965px) and (max-width: 1200px) {
+ main {
+    padding-top: 0px;
+  }
+
+  #navigation {
+    padding: 0 2em;
+  }
+
+  #navigation #logo {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100px;
+  }
+
+  #navigation img {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+    object-fit: cover;
+  }
+
+  #main-nav {
+    gap: 0.5em;
+  }
+
+  #main-nav li {
+    padding: 6px 0.55rem;
+    font-size: 1em;
+  }
+
+  #navigation #contacto {
+    padding: 4px 0.5rem;
+    font-size: 0.9em;
+  }
+
+  /*Sección primera*/
+
+  #seccionPrimera h1{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+
+
+
+  /*Sección Cuarta */
   #seccionCuarta{
-    gap: 1.6em;
-    padding: 2em;
-  }
+    padding: 0 2em;
 
-  #seccionCuarta div{
-    width: 50%;
   }
-
+  
   #seccionCuarta div h3{
     font-size: 0.93em;
   }
-
-  /* Sección Quinta */
-
-  #paquetes{
-    margin-bottom: 20px;
-  }
-
-  .package-header{
-    font-size: 0.74em;
-  }
-
-  
-
-
-
 
 }
