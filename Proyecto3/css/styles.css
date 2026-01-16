@@ -627,4 +627,42 @@ footer {
 
 @media screen and (min-width: 1024px) {
   /*Estilos escritorio */
+
+
+
+  /**Diseño Menu*/
+
+  #navigation{
+    padding: 0 1.7em;
+  }
+
+  #main-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+
+
+  /**Diseño de Primera Sección*/
+  #seccionPrimera h1{
+    text-align: center;
+  }
+
+
+
+
+  /**Diseño de Cuarta sección */
+  #seccionCuarta{
+    padding: 0 3em;
+  }
+
+
+
+
+
+  /**Seccion Quinta*/
+  #paquetes p {
+    text-align: center;
+  }
 }
